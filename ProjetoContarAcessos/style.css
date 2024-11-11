@@ -1,0 +1,23 @@
+body{
+ background-image: url(https://static.basicinvite.com/media/bi/35203/geo-confetti-wallpaper-2x.jpg?q=1693949113);
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 75px;
+    font-family: arial;
+    background-color: lightblue;
+    border-radius: 20px;
+    border: solid 5px lightcyan;
+    transition: 1s;
+}
+h1:hover{
+    font-size: 80px;
+    background: rgb(201,0,255);
+background: linear-gradient(360deg, rgba(201,0,255,1) 25%, rgba(0,255,231,1) 52%, rgba(0,176,255,1) 85%);
+}
