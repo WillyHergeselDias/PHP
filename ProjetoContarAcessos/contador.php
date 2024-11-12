@@ -1,14 +1,14 @@
 <?php
 /**
  * Função que conta o total de acessos de usuários e salva este número em um arquivo de texto
- * @param void - função sem parâmtros.
- * @return int - retorna o número de total de acessos.
+ * @param void - função sem parâmetros
+ * @return int - retorna o número de total de acessos
  */
 function contador(){
-    //Inicialização da variavel que recebe o arquivo de texto
+    //Inicialização da variável que recebe o arquivo de texto
     $arquivo = null;
 
-    //Checando se o arquivo existe, caso verdadeiro, incrementa a variável n e adiciona ela no arquivo de texto.
+    //Checando se o arquivo existe, caso verdadeiro, incrementa a variável $n e adiciona ela no arquivo de texto
   if(file_exists("contador.txt") && $_SERVER['REMOTE_PORT'] != null){
       $n = file_get_contents('contador.txt');
       $n++;
@@ -19,7 +19,7 @@ function contador(){
     $arquivo = fopen("contador.txt","w");
     fwrite($arquivo,$n);
   }
-  //Retornando a váriavel n
+  //Retornando a váriavel $n
   return $n;
 }
 ?>
